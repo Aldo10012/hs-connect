@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, redirect, url_for, render_template, request
 
 app = Flask(__name__)
 
@@ -7,7 +7,14 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/signup", methods=['POST', 'GET'])
+def signup():
+    return render_template("signup.html")
 
+
+@app.route("/welcome")
+def welcome():
+    return render_template("welcome.html")
 
 
 
