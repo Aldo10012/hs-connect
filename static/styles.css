@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+#get-started-btn-1{
+    margin-top: 20px;
+    background-color: #F5F5F5;
+    color: #00C7D3;
+}
+
+#get-started-btn-2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #00C7D3 ;
+    color: #F5F5F5;
+}
+
+img{
+    border-radius: 50%;
+}
+
+p{ font-size: 1.5em; }
+
+.p{ font-size: 1.5em; margin-left: 10px; }
+
+#home-jumbotron{
+    height: 70vh; 
+    background-image: url('https://res.cloudinary.com/highereducation/image/upload/f_auto,fl_lossy,q_auto/c_fill,g_face:center,h_433,w_835/v1593043785/BestColleges.com/Blog/BC-Blog_FirstGenCollegeStudent_6.25.20_1.jpg');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-caption{
+    margin-top: 250px;
+    font-weight: lighter;
+    width: 500px;
+    color: #F5F5F5;
+}
+
+.recent-img{
+    padding: 10px; 
+    border-radius: 50%;
+}
+
+/* welcome */
+
+#welcome-caption{
+    text-align: right; 
+    margin-top: 350px; 
+    color: #F5F5F5;
+}
+
+#welcome-jumbotron{
+    height: 60vh;
+      background-image: url('https://odh.ohio.gov/wps/wcm/connect/gov/18a4f3b7-c3de-45e5-aa7f-0f11c726af9f/GettyImages-862201482_1280x480.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-18a4f3b7-c3de-45e5-aa7f-0f11c726af9f-mI4uCcC');
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+}

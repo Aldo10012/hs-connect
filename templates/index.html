@@ -5,11 +5,17 @@
     <title>HS Connect</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom css -->
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='styles.css') }}">
+
+
+    
     
   </head>
-  <body>
+  <body > 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -29,11 +35,12 @@
     </nav>
     
     <!-- HERO IMAGE -->
-    <section class="jumbotron" style="height: 70vh">
-      <div class='container'>
-        <h1 class="display-4">600,000+ Alumni Connections Waiting To Happen</h1>
-        
-        <a class="btn btn-primary btn-lg" href="#" role="button">Get Stared Now</a>
+    <section class="jumbotron" id='home-jumbotron'>
+
+      <div class='' id='home-caption'>
+
+        <h1 class="">600,000+ Alumni Connections Waiting To Happen</h1>
+        <a class="btn btn-primary btn-lg" href="#" role="button" id='get-started-btn-1'>Get Started Now</a>
       </div>
     </section>
 
@@ -41,10 +48,10 @@
     <main class="container">
       <section>
         <div class='row'>
-          <div class='col-lg-4'>
+          <div class='col-lg-4 col-md-4'>
               <img class='' src='https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB' width='100%'height='100%'>
           </div>
-          <div class='col-lg-8'>
+          <div class='col-lg-8 col-md-8'>
             <h2>Some text here</h2>
             <p>hellojjjjdeifjjddifjaoweijfo aiwejfoiaj oiefj oaiw rjoawir joaiwj oiafjgajvmoiejncmoimrcmiajeoricmjaeo </p>
           </div>
@@ -52,35 +59,29 @@
         <br>
 
         <div class='row'>
-          <div class='col-lg-8'>
+          <div class='col-lg-8 col-md-8'>
             <h2>Some text here</h2>
             <p>hellojjjjdeifjjddifjaoweijfo aiwejfoiaj oiefj oaiw rjoawir joaiwj oiafjgajvmoiejncmoimrcmiajeoricmjaeo </p>
           </div>
-          <div class='col-lg-4'>
+          <div class='col-lg-4 col-md-4'>
               <img class='' src='https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB' width='100%'height='100%'>
           </div>
 
           <br>
-          <a class="btn btn-primary btn-lg col-lg-2 offset-lg-5" href="#" role="button">Get Stared Now</a>
+          <a class="btn btn-primary btn-lg  col-lg-2 offset-lg-5  col-md-4 offset-md-4  col-sm-6 offset-sm-3" href="#" role="button" id='get-started-btn-2'>Get Started Now</a>
         </div>
       </section><br>
 
       <section>
         <h2 style='text-align: center;'>Recently Joined</h2>
         <div class='row'>
-          {% for x in range(6) %}
-            <div class='col-lg-2'>
-              <img class='' src='https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB' width='100%'height='100%' style="padding: 10px">
+          {% for x in range(12) %}
+            <div class='col-lg-2 col-md-4 col-sm-6'>
+              <img class='recent-img' src='https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB' width='100%'height='100%' style="padding: 10px;">
             </div>
           {% endfor %}
         </div> <br>
 
-        <div class='row'>
-          {% for x in range(6) %}
-            <div class='col-lg-2'>
-              <img class='' src='https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB' width='100%'height='100%' style="padding: 10px">
-            </div>
-          {% endfor %}
         </div>
         
       </section>
